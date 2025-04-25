@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'idroid';
-    src: url(fontes/idroid.otf) format('opentype');
+    src: url(../fonts/idroid.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +12,31 @@
 body {
     background-color: #84E1AD;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+}
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    line-height: 1.5em;
+}
+
+ul {
+    padding: 0px 40px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #1e6e42;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #348f5d;
+    transition: all 0.3s ease-in-out;
 }
 
 header{
@@ -23,7 +48,7 @@ header{
 header > h1{
     text-align: center;
     padding-top: 50px;
-    font-size: 50px;
+    font: 3em 'Bebas Neue', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.31);
 }
 
@@ -33,7 +58,12 @@ header > p{
     color: #cacaca;
 }
 
-header > nav > a {
+nav {
+    background-color: #154C2E;
+    padding: 10px;
+}
+
+nav > a {
     text-decoration: none;
     text-align: center;
     color: white;
@@ -41,7 +71,7 @@ header > nav > a {
     padding: 3px 10px;
 }
 
-header > nav > a:hover {
+nav > a:hover {
     background-color:#348f5d;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -70,33 +100,12 @@ main > section > article > h2 {
     margin: 10px 20px;
 }
 
-main > section > article > p {
-    font-size: 1em;
-    text-align: justify;
-    text-indent: 2em;
-    line-height: 1.5em;
-    padding: 10px 20px;
-    margin: 0px;
-    line-height: 1.5em;
-}
-
-main > section > article > p > a {
-    text-decoration: none;
-    color: #1e6e42;
-    font-weight: bold;
-}
-
-main > section > article > p > a:hover {
-    color: #348f5d;
-    transition: all 0.3s ease-in-out;
-}
-
-main > section#video {
+main > section > article > div#video {
     background-color: #1A5C38;
     padding: 10px;
 }
 
-main > section#extra > article {
+main > section > article > div#extra {
     background-color: #b3ebcb;
     margin : 20px;
     padding: 0px;
@@ -104,12 +113,13 @@ main > section#extra > article {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-main > section#extra > article > h3 {
+main > section > article > div#extra > h3 {
     color: white;
     padding: 15px;
     background-color: #348f5d;
     border-radius: 10px 10px 0px 0px;
 }
+
 
 footer {
     background-color: #1A5C38;
