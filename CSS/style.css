@@ -27,43 +27,20 @@ body {
     font-family: var(--font-padrao)
 }
 
-img{
-    width: 100%;
-}
-
-strong {
-    color: var(--color5);
-}
-
-a.out{
-    text-decoration: none;
-    color: var(--color5);
-    font-weight: bold;
-}
-
-a.out:hover {
-    color: var(--color2);
-    transition: all 0.3s ease-in-out;
-}
-
-ul {
-    padding: 0px 40px;
-}
-
 header{
     background-image: linear-gradient(to top,var(--color5), var(--color1));
     height: 250px;
     color: white;
 }
 
-header > h1{
+header h1{
     text-align: center;
     padding-top: 50px;
     font: 3em  var(--font-destaque);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.31);
 }
 
-header > p{
+header p{
     text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.452);
     color: #cacaca;
@@ -74,7 +51,7 @@ nav {
     padding: 10px;
 }
 
-nav > a {
+nav a {
     text-decoration: none;
     text-align: center;
     color: white;
@@ -82,7 +59,7 @@ nav > a {
     padding: 3px 10px;
 }
 
-nav > a:hover {
+nav a:hover {
     background-color:var(--color4);
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -90,7 +67,7 @@ nav > a:hover {
 
 main {
     margin: 0px auto 20px;
-    min-width: 320px;
+    min-width: 280px;
     max-width: 800px;
     padding: 20px;
     background-color: white;
@@ -98,19 +75,19 @@ main {
     box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.24);
 }
 
-main > section > article > h1 {
+main h1 {
     font: normal 2em var(--font-android);
     color: var(--color5);
 }
 
-main > section > article > h2 {
+main h2 {
     font: normal 1.5em var(--font-android);
     color: var(--color5);
     background-image: linear-gradient(to right,var(--color1), white 75%);
     padding: 0px 10px;
 }
 
-main > section > article > p {
+main p {
     font-size: 1em;
     text-align: justify;
     text-indent: 2em;
@@ -119,32 +96,61 @@ main > section > article > p {
     line-height: 1.5em;
 }
 
-main > section > article > div#video {
+main strong {
+    color: var(--color5);
+}
+
+main a.out{
+    text-decoration: none;
+    color: var(--color5);
+    font-weight: bold;
+}
+
+main a.out:hover {
+    color: var(--color2);
+    transition: all 0.3s ease-in-out;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.smaller{
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+main div#video {
     padding: 20px;
     background-color: var(--color4);
 }
 
-main > section > article > aside {
+main aside {
+    margin-top: 20px;
     background-color: var(--color0);
-    margin : 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-main > section > article > aside> h3 {
+aside h3 {
     color: white;
     padding: 15px;
     background-color: var(--color3);
     border-radius: 10px 10px 0px 0px;
 }
 
-main > section > article > aside> p {
+aside p {
     font-size: 1em;
     text-align: justify;
     text-indent: 2em;
     line-height: 1.5em;
     padding: 10px 20px;
     line-height: 1.5em;
+}
+
+aside  ul {
+    padding: 0px 40px;
 }
 
 
@@ -155,11 +161,11 @@ footer {
     padding: 10px;
 }
 
-footer > p {
+footer p {
     text-align: center;
 }
 
-footer> p > a {
+footer > p > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
