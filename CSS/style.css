@@ -9,9 +9,21 @@
     font-style: normal;
 }
 
+:root {
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa886;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+}
+
 body {
-    background-color: #c5ebd6;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color0);
+    font-family: var(--font-padrao)
 }
 
 p {
@@ -24,17 +36,17 @@ p {
 }
 
 strong {
-    color: #1e6e42;
+    color: var(--color5);
 }
 
 a {
     text-decoration: none;
-    color: #1e6e42;
+    color: var(--color5);
     font-weight: bold;
 }
 
 a:hover {
-    color: #348f5d;
+    color: var(--color2);
     transition: all 0.3s ease-in-out;
 }
 
@@ -43,7 +55,7 @@ ul {
 }
 
 header{
-    background-image: linear-gradient(to top,#154C2E,#3CDA83);
+    background-image: linear-gradient(to top,var(--color5), var(--color1));
     height: 250px;
     color: white;
 }
@@ -51,7 +63,7 @@ header{
 header > h1{
     text-align: center;
     padding-top: 50px;
-    font: 3em 'Bebas Neue', sans-serif;
+    font: 3em  var(--font-destaque);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.31);
 }
 
@@ -62,7 +74,7 @@ header > p{
 }
 
 nav {
-    background-color: #154C2E;
+    background-color: var(--color5);
     padding: 10px;
 }
 
@@ -75,7 +87,8 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color:#348f5d;
+    background-color:var(--color4);
+    color: white;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -90,28 +103,26 @@ main {
 
 main > section > article > h1 {
     font: normal 2em 'idroid', sans-serif;
-    color: #154C2E;
+    color: var(--color5);
     padding: 20px;
-    margin: 0px;
 }
 
 main > section > article > h2 {
     font: normal 1.5em 'idroid', sans-serif;
-    color: #154C2E;
-    background-image: linear-gradient(to right,#30e08048, white 75%);
+    color: var(--color5);
+    background-image: linear-gradient(to right,var(--color1), white 75%);
     padding: 0px 20px;
     margin: 10px 20px;
 }
 
 main > section > article > div#video {
-    background-color: #1A5C38;
+    background-color: var(--color4);
     padding: 10px;
 }
 
 main > section > article > aside {
-    background-color: #b3ebcb;
+    background-color: var(--color0);
     margin : 20px;
-    padding: 0px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -119,17 +130,20 @@ main > section > article > aside {
 main > section > article > aside> h3 {
     color: white;
     padding: 15px;
-    background-color: #348f5d;
+    background-color: var(--color3);
     border-radius: 10px 10px 0px 0px;
 }
 
 
 footer {
-    background-color: #1A5C38;
+    background-color: var(--color5);
     color: white;
     text-align: center;
     padding: 10px;
-    margin: 0px;
+}
+
+footer > p {
+    text-align: center;
 }
 
 footer> p > a {
