@@ -1,4 +1,4 @@
-# Site_Android
+# Mascote do Android - Site em HTML e CSS
 
 Este projeto é um site simples desenvolvido com **HTML** e **CSS**, relatando a criação do mascote do sistema operacional **Android**. O objetivo é praticar a estruturação de páginas web e a aplicação de estilos básicos.
 
